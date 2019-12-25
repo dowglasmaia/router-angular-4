@@ -1,14 +1,19 @@
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { routing } from './app.routing';
 
 import { AppComponent } from './app.component';
+
 import { LoginComponent } from './login/login.component';
 import { CursosComponent } from './cursos/cursos.component';
 import { HomeComponent } from './home/home.component';
-import { routing } from './app.routing';
-import { CursoDetalhesComponent } from './curso-detalhes/curso-detalhes.component';
+import { CursoDetalhesComponent } from './cursos/curso-detalhes/curso-detalhes.component';
+import { CursoService } from './cursos/shared/curso.service';
+import { CursoNaoEncontradoComponent } from './cursos/curso-nao-encontrado/curso-nao-encontrado.component';
+
 
 @NgModule({
   declarations: [
@@ -16,7 +21,8 @@ import { CursoDetalhesComponent } from './curso-detalhes/curso-detalhes.componen
     LoginComponent,
     CursosComponent,
     HomeComponent,
-    CursoDetalhesComponent
+    CursoDetalhesComponent,
+    CursoNaoEncontradoComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +30,7 @@ import { CursoDetalhesComponent } from './curso-detalhes/curso-detalhes.componen
     HttpModule,
     routing
   ],
-  providers: [],
+  providers: [CursoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
