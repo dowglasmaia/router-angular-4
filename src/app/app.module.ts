@@ -8,13 +8,15 @@ import { LoginComponent } from './login/login.component';
 import { CursosComponent } from './cursos/cursos.component';
 import { HomeComponent } from './home/home.component';
 import { routing } from './app.routing';
+import { CursoDetalhesComponent } from './curso-detalhes/curso-detalhes.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     CursosComponent,
-    HomeComponent
+    HomeComponent,
+    CursoDetalhesComponent
   ],
   imports: [
     BrowserModule,
