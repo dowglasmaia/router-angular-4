@@ -1,5 +1,7 @@
 <div class="card-panel teal lighten-2">Cursos</div>
 
+<p>Página: {{pagina}}</p>
+
 <div class="collection">
   <a class="collection-item" 
   *ngFor="let curso of cursos"
@@ -8,3 +10,7 @@
   </a>
 
 </div>
+
+<button class="btn waves-effect waves-light"  (click)="proximaPagina()">Proxima Página
+  <i class="material-icons right">chevron_right</i>
+</button>

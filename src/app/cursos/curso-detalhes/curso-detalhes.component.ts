@@ -34,11 +34,11 @@ export class CursoDetalhesComponent implements OnInit {
           if(this.curso ==null){
             this.router.navigate(['/curso-nao-encontrado'])
           }
-
       });
   }
 
   ngOnDestroy() {
     this.inscricao.unsubscribe();
   }
+  
 }
