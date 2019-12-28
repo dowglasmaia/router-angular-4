@@ -1,18 +1,13 @@
-
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-//import { routing } from './app.routing';
 
 import { AppComponent } from './app.component';
 
-import { LoginComponent } from './login/login.component';
-import { CursosComponent } from './cursos/cursos.component';
 import { HomeComponent } from './home/home.component';
-import { CursoDetalhesComponent } from './cursos/curso-detalhes/curso-detalhes.component';
-import { CursoService } from './cursos/shared/curso.service';
-import { CursoNaoEncontradoComponent } from './cursos/curso-nao-encontrado/curso-nao-encontrado.component';
+import { CursosModule } from './cursos/curso.module';
+import { LoginComponent } from './login/login.component';
 import { AppRoutingModule } from './app.routing.module';
 
 
@@ -20,19 +15,17 @@ import { AppRoutingModule } from './app.routing.module';
   declarations: [
     AppComponent,
     LoginComponent,
-    CursosComponent,
-    HomeComponent,
-    CursoDetalhesComponent,
-    CursoNaoEncontradoComponent
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
+    CursosModule,
     AppRoutingModule
-   // routing
+
   ],
-  providers: [CursoService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
