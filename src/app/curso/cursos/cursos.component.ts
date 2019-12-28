@@ -1,13 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 
-import { CursoService } from './shared/curso.service';
+import { CursoService } from '../shared/curso.service';
 import { Subscription } from 'rxjs/Rx';
 
 @Component({
   selector: 'app-cursos',
-  templateUrl: './cursos.component.html',
-  styleUrls: ['./cursos.component.css']
+  templateUrl: './cursos.component.html'
 })
 export class CursosComponent implements OnInit {
 

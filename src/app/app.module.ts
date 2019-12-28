@@ -6,7 +6,7 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 
 import { HomeComponent } from './home/home.component';
-import { CursosModule } from './cursos/curso.module';
+import { CursosModule } from './curso/core/curso.module';
 import { LoginComponent } from './login/login.component';
 import { AppRoutingModule } from './app.routing.module';
 
