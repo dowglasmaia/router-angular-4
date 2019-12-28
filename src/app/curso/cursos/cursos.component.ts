@@ -11,9 +11,7 @@ import { Subscription } from 'rxjs/Rx';
 export class CursosComponent implements OnInit {
 
   cursos: any[];
-
   pagina: number;
-
   inscricao: Subscription
 
   constructor(
@@ -23,7 +21,6 @@ export class CursosComponent implements OnInit {
 
   ngOnInit() {
     this.cursos = this.cursoServices.getCursos();
-
     this.inscricao = this.route.queryParams.subscribe(params => {
       this.pagina = params['pagina'];
     })

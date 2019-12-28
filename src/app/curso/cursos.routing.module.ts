@@ -1,9 +1,9 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from '@angular/router';
 
-import { CursoNaoEncontradoComponent } from '../curso-nao-encontrado/curso-nao-encontrado.component';
-import { CursoDetalhesComponent } from '../curso-detalhes/curso-detalhes.component';
-import { CursosComponent } from "../cursos/cursos.component";
+import { CursoNaoEncontradoComponent } from './curso-nao-encontrado/curso-nao-encontrado.component';
+import { CursoDetalhesComponent } from './curso-detalhes/curso-detalhes.component';
+import { CursosComponent } from "./cursos/cursos.component";
 
 const AppRoutes: Routes = [
     { path: 'cursos', component: CursosComponent },
