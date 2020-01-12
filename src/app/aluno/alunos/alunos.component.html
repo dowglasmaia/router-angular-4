@@ -1,33 +1,14 @@
-<table class="highlight">
-  <thead>
-    <tr>
-        <th>Name</th>
-        <th>Item Name</th>
-        <th>Item Price</th>
-    </tr>
-  </thead>
+<ul class="collection">
+  <li class="collection-item avatar" *ngFor="let aluno of alunos">
+    <img src="images/yuna.jpg" alt="" class="circle">
+    <span class="title"> {{aluno.nome}}</span>
+    <p> {{aluno.email}}</p>
+    <a [routerLink]="[ '/path', routeParam ]" class="secondary-content tooltipped" data-tooltip="Editar">
+      <i class="material-icons">grade</i>
+    </a>
+  </li>
+</ul>
 
-  <tbody>
-    <tr>
-      <td>Alvin</td>
-      <td>Eclair</td>
-      <td>$0.87</td>
-    </tr>
-    <tr>
-      <td>Alan</td>
-      <td>Jellybean</td>
-      <td>$3.76</td>
-    </tr>
-    <tr>
-      <td>Jonathan</td>
-      <td>Lollipop</td>
-      <td>$7.00</td>
-    </tr>
-  </tbody>
-</table>
-
-
-<br>
 <br>
 <hr>
 <h5>Detalhes</h5>

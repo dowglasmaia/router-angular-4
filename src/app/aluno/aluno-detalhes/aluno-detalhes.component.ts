@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AlunoDetalhesComponent implements OnInit {
 
+  aluno: any;
+
   constructor() { }
 
+
   ngOnInit() {
+   
   }
 
 }
